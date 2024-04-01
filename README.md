@@ -1,2 +1,9 @@
 # Pomodoro
  
+
+
+ #FUNÇÕES
+
+ - CRONOMETRAR 25MINUTOS / 5 MINUTOS / 15 MINUTOS
+ 
+

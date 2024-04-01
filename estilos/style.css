@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+body{
+    background: #ba0000 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#interface_app{
+    display: flex;
+    width: 90%;
+    height: 90vh;
+    background-color: aliceblue;
+}
