@@ -63,15 +63,16 @@ body{
     border-radius: 10px;
     display: flex;
     background-color: #750303;
-    height: 20%;
+    
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 1rem;
 }
 
-/* .background {
-    /* height: 50%; } */
+.background {
+    height: 200px;
+}
 
 #interface_app .display #timer {
     font-family: relogio;
