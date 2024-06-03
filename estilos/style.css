@@ -32,54 +32,103 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 80%;
-    height: 100vw;
+    width: 100%;
+    /* height: 100vw; */
     /* background-color: aliceblue; */
 }
+
+@media (min-width: 700px) {
+    #interface_app {
+        width: 60%;
+    }
+  }
 
 #interface_app h1{
     text-align: center;
     font-size: 2.4rem;
-    text-shadow: -2px 1px 8px #000000;
     color: #fff;
     margin-bottom: 20px;
     
 }
 
 #interface_app .display {
-    gap: 40px;
+    gap: 20px;
     border-radius: 10px;
     display: flex;
     background-color: #750303;
-    height: 80%;
+    height: 240%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* border: 1px solid; */
+    padding: 1rem;
 }
 
-#interface_app .display .background {
-    background:url(../imagens/Icon.png); background-size:cover;
-    /* background-color: #fff; */
-    width:50%;
+.background {
     height: 50%;
 }
 
 #interface_app .display #timer {
     font-family: relogio;
-    font-size: 4rem;
+    font-size: 6rem;
     color: #fff;
 }
 
-#interface_app .display .btnplay{
+#interface_app .btn_play{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.3rem;
-    background-image: linear-gradient( #FFFFFF ,#B9B9B9 );
+    font-size: 1.5rem;
+    background-image: linear-gradient(#FFFFFF, #B9B9B9);
     color: #ba0000;
     border-radius: 10px;
     font-weight: 500;
-    padding: 10px;
-    width: 130px;
+    padding: 1.3rem;
+    min-width: 100px;
+    height: 2rem;
+    box-shadow: 0px 4px 5px 0px #470000;
+    cursor: pointer;
+}
+
+#interface_app .btn_play:hover {
+    transition: 1s;
+    box-shadow: 0px 4px 5px 3px #470000;
+}
+
+
+
+.btn .bx {
+    font-size: 1.5rem;
+}
+
+.buttons {
+    display: flex;
+    margin-top: 2rem;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.btns {
+    background-color: #750303;
+    color: white;
+    padding: 1rem 1.7rem;
+    line-height: 1.2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+
+}
+
+.btns .primeirotxtbtn {
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.btns .segundotxtbtn {
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.selecionado {
+    border-bottom: 0.3rem solid #289A00;
 }

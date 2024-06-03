@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>25:00 - TomateFoco</title>
+    <link rel="shortcut icon" href="imagens/favicon_io/android-chrome-512x512.png" type="image/x-icon">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
@@ -12,15 +15,40 @@
         <h1>TomateFoco</h1>
 
         <div class="display">
-            <div class="background"></div>
+            <div class="background">
+                <img src="../imagens/Icon.png" width="200px" alt="">
+            </div>
             <span id="timer">25:00</span>
-            <div class="btnplay">Play</div>
+            
+            <div class="btn_play"><i class='bx bx-play'></i>Play</div>
         </div>
 
         <div class="buttons">
+
+            <div class="btns selecionado">
+            <label class="primeirotxtbtn">POMODORO</label><br>
+            <label class="segundotxtbtn">25 minutos</label>
+            </div>
+
+            <div class="btns">
+                <label class="primeirotxtbtn">1ª PAUSA</label><br>
+                <label class="segundotxtbtn">5 minutos</label>
+            </div>
+
+            <div class="btns">
+                <label class="primeirotxtbtn">2ª PAUSA</label><br>
+                <label class="segundotxtbtn">15 minutos</label>
+            </div>
+
             
+
+
+
         </div>
+
     </section>
+
+    <script src="js/main.js"></script>
     
 </body>
 </html>
