@@ -13,6 +13,7 @@ botoes_select[0].addEventListener("click", () => {
         botoes_select[0].className = "btns selecionado";
         botoes_select[1].className = "btns";
         botoes_select[2].className = "btns";
+        botoes_select[3].className = "btns";
 
         // Codigo para colocar no timer
         timer.textContent = "25:00";
@@ -25,6 +26,7 @@ botoes_select[1].addEventListener("click", () => {
         botoes_select[1].className = "btns selecionado";
         botoes_select[0].className = "btns";
         botoes_select[2].className = "btns";
+        botoes_select[3].className = "btns";
 
         // Codigo para colocar no timer
         timer.textContent = "05:00";
@@ -37,12 +39,28 @@ botoes_select[2].addEventListener("click", () => {
         botoes_select[2].className = "btns selecionado";
         botoes_select[1].className = "btns";
         botoes_select[0].className = "btns";
+        botoes_select[3].className = "btns";
 
         // Codigo para colocar no timer
         timer.textContent = "15:00";
         titulo.innerText  = `${timer.textContent} - TomateFoco`
     }
 });
+
+botoes_select[3].addEventListener("click", () => {
+    if (botoes_select[3].className == "btns") {
+        botoes_select[3].className = "btns selecionado";
+        botoes_select[1].className = "btns";
+        botoes_select[0].className = "btns";
+        botoes_select[2].className = "btns";
+
+        // Codigo para colocar no timer
+        timer.textContent = "30:00";
+        titulo.innerText  = `${timer.textContent} - TomateFoco`
+    }
+});
+
+
 
 function play() {
     if (btn_play.textContent === "Play") {

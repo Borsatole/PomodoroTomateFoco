@@ -26,6 +26,7 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    padding: 0px 20px;
 }
 
 #interface_app{
@@ -41,13 +42,19 @@ body{
     #interface_app {
         width: 60%;
     }
+
+    .btns .primeirotxtbtn {
+        font-weight: 700;
+        cursor: pointer;
+        font-size: 1.2rem;
+    }
   }
 
 #interface_app h1{
     text-align: center;
     font-size: 2.4rem;
     color: #fff;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     
 }
 
@@ -56,7 +63,7 @@ body{
     border-radius: 10px;
     display: flex;
     background-color: #750303;
-    height: 240%;
+    /* height: 240%; */
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -101,27 +108,35 @@ body{
 }
 
 .buttons {
-    display: flex;
-    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* display: flex; */
+    margin-top: 0.1rem;
     gap: 1rem;
     justify-content: center;
     align-items: center;
+    padding: 1rem 0rem;
     
 }
+
+
 
 .btns {
     background-color: #750303;
     color: white;
-    padding: 1rem 1.7rem;
+    padding: 1rem 0.7rem;
     line-height: 1.2rem;
     border-radius: 1rem;
     cursor: pointer;
-
+    text-align: center;
+    border-bottom: 0.3rem solid #ffffff00;
+    min-width: 98px;
 }
 
-.btns .primeirotxtbtn {
-    font-weight: 700;
-    cursor: pointer;
+
+
+.primeirotxtbtn {
+    font-size: 0.6rem;
 }
 
 .btns .segundotxtbtn {
@@ -130,5 +145,16 @@ body{
 }
 
 .selecionado {
-    border-bottom: 0.3rem solid #289A00;
+    border-bottom: 0.3rem solid #ffffff;
+    animation: teste 1s normal;
+}
+
+@keyframes teste {
+    0% {
+        border-bottom: 0.3rem solid #ffffff00;
+    }
+
+    100% {
+        border-bottom: 0.3rem solid #ffffff;
+    }
 }
