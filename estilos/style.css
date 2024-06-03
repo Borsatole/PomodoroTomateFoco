@@ -82,6 +82,7 @@ body{
 
 #interface_app .btn_play{
     display: flex;
+    gap: 1rem;
     justify-content: center;
     align-items: center;
     font-size: 1.5rem;
