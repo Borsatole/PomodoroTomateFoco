@@ -70,9 +70,8 @@ body{
     padding: 1rem;
 }
 
-.background {
-    /* height: 50%; */
-}
+/* .background {
+    /* height: 50%; } */
 
 #interface_app .display #timer {
     font-family: relogio;
