@@ -117,7 +117,7 @@ function regressiva(minutos, segundos) {
                 countdownTimeout = setTimeout(atualizarTempo, 1000); // Armazenar o ID do timeout
             } else {
                 document.getElementById('timer').textContent = "00:00";
-                btn_play.innerHTML = `<i class='bx bx-play'></i>Play`;
+                btn_play.innerHTML = `<i class='bx bxs-caret-right-circle'></i>Play`;
                 som_end.play();
                 window.navigator.vibrate(200);
                 timer.textContent = "25:00"
