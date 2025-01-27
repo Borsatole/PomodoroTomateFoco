@@ -19,7 +19,7 @@
 </p>
 
 ### 🔗 Veja o Projeto
-https://borsatole.github.io/Pomodoro/
+https://borsatole.github.io/PomodoroTomateFoco
 
  
  
